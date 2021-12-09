@@ -28,6 +28,10 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
+            headline4: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           bodyText1: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -36,6 +40,12 @@ class MyApp extends StatelessWidget {
           subtitle2: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromRGBO(151, 152, 152, 1),
           )
         ),
+        buttonTheme: ButtonThemeData(
+          buttonColor: Color.fromRGBO(0, 223, 100, 1),
+          textTheme: ButtonTextTheme.primary,
+          colorScheme: Theme.of(context).colorScheme.copyWith(primary: Color.fromRGBO(0, 223, 100, 1),
+          )
+        )
       ),
       //home: HomeScreen(),
       routes: {
